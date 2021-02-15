@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<Sheet />
+	<PianoKeyboard />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import PianoKeyboard from './components/PianoKeyboard/Keyboard';
+import Sheet from './components/Sheet/Sheet';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+		PianoKeyboard,
+		Sheet
+	},
+	methods: {
+
+	}
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	*{
+		box-sizing: border-box;
+	}
 </style>
