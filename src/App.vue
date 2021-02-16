@@ -1,18 +1,19 @@
 <template>
-	<Sheet />
+	<ChordBuilder />
 	<PianoKeyboard />
 </template>
 
 <script>
 
 import PianoKeyboard from './components/PianoKeyboard/Keyboard';
-import Sheet from './components/Sheet/Sheet';
+// import Sheet from './components/Sheet/Sheet';
+import ChordBuilder from './components/ChordBuilder/ChordBuilder';
 
 export default {
 	name: 'App',
 	components: {
 		PianoKeyboard,
-		Sheet
+		ChordBuilder
 	},
 	methods: {
 

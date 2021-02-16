@@ -1,7 +1,5 @@
 import ClassEvents from './ClassEvents.js';
-
-const noteList = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-const octaveNames = ['Субконтроктава', 'Контроктава', 'Большая октава', 'Малая октава', 'Первая октава', 'Вторая октава', 'Третья октава', 'Четвёртая октава', 'Пятая октава'];
+import { noteList, octaveNames } from './keysList.js';
 
 
 class Midi extends ClassEvents {
@@ -56,4 +54,4 @@ class Midi extends ClassEvents {
 	
 }
 
-export { Midi };
+export { Midi, noteList, octaveNames };
