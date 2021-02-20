@@ -31,7 +31,7 @@
 				const noteDiff = this.calculateNoteInfo();
 				if (this.type == 'treble'){
 					if (noteDiff % 2 == 0) return 'centerline';
-					if (this.noteNumber > this.startNote) return 'underline'; else return 'upperline';
+					if ((this.noteNumber > this.startNote) || this.noteNumber === 59) return 'underline'; else return 'upperline';
 				}
 				return 'centerline'; // underline, upperline, centerline
 			}

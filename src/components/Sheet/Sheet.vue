@@ -1,6 +1,8 @@
 <template>
-	<SheetPart :type="'treble'" v-bind:notes="activeKeys" />
-	<SheetPart :type="'bass'" />
+	<div class="sheet-wrapper">
+		<SheetPart :type="'treble'" v-bind:notes="activeKeys" />
+		<SheetPart :type="'bass'" />
+	</div>
 </template>
 
 <script>
@@ -31,6 +33,9 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
+	.sheet-wrapper{
+		margin: 150px 0;
+	}
 
 </style>

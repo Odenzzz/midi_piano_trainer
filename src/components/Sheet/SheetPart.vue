@@ -33,7 +33,7 @@
 			}
 		},
 		created(){
-			this.keysList = generateKeysList();
+			this.keysList = generateKeysList(1, 120);
 		}
 	}
 </script>
@@ -45,7 +45,7 @@
 	}
 	.sheet {
 		position: relative;
-		margin: 120px 0;
+		margin: 42px 0;
 		&__line{
 			position: relative;
 			border-bottom: 2px solid rgb(114, 114, 114);
